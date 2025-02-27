@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrasunNews - Blogs</title>
-</head>
-<style>
-    nav {
+    <title>Prasun-News Blogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: darkmagenta;
+            color: wheat;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header h3 {
+            font-size: 1.2em;
+        }
+
+        nav {
             background-color: #333;
             padding: 10px 0;
             text-align: center;
@@ -24,16 +51,134 @@
             background-color: #ddd;
             color: black;
         }
-</style>
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .blog-post {
+            display: flex;
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-image {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .post-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: darkslategray;
+        }
+
+        .summary {
+            font-size: 1.1em;
+            color: gray;
+            margin: 10px 0;
+        }
+
+        .read-more {
+            color: darkmagenta;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Media Links */
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
 <body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Prasun News Blogs</h1>
+        <h3>Your source for the latest technology, entertainment, and news updates.</h3>
+    </header>
+
+    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a>
-        <!-- <a href="#">World</a>
-        <a href="#">Politics</a>
-        <a href="#">Entertainment</a>
-        <a href="#">Sports</a> -->
         <a href="Blogs.html">Blogs</a>
         <a href="cv.html">Contact</a>
     </nav>
+
+    <!-- Main Content (Blog Section) -->
+    <main>
+        <!-- Blog Post 1 -->
+        <article class="blog-post">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/002/363/320/small/article-icon-free-vector.jpg" alt="Tech News" class="post-image">
+            <div class="post-content">
+                <h2>AI and Its Impact on the Future of Technology</h2>
+                <p class="summary">Artificial Intelligence is set to revolutionize industries. From self-driving cars to smart healthcare systems, AI is becoming an integral part of our lives. In this article, we explore the key developments in AI and how they’re shaping the future...</p>
+                <a href="ai-tech-innovations.html" class="read-more">Read more</a>
+            </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-post">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/009/351/488/small/news-letter-article-png.png" alt="Mobile Innovations" class="post-image">
+            <div class="post-content">
+                <h2>The Evolution of Mobile Technology</h2>
+                <p class="summary">Mobile technology has evolved at an incredible pace, from the first cell phones to the smartphones we use today. What’s next? This post looks at the history of mobile technology and its future potential...</p>
+                <a href="mobile-tech-evolution.html" class="read-more">Read more</a>
+            </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-post">
+            <img src="https://core-docs.s3.amazonaws.com/franklin_public_schools_ar/article/image/large_0bbf4f54-5cb4-4335-9efe-f1befb6a8a47.png" alt="Remote Work" class="post-image">
+            <div class="post-content">
+                <h2>The Future of Work: Remote vs. In-Office</h2>
+                <p class="summary">The pandemic has drastically changed how we work, and it’s unlikely that things will return to the way they were. This post discusses the rise of remote work and how it’s influencing the global workforce...</p>
+                <a href="remote-vs-office.html" class="read-more">Read more</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #333; color: white; padding: 30px 20px; text-align: center;">
+        <div class="footer-content">
+            <!-- Copyright Notice -->
+            <p>© 2025 Prasun-News Nepal. All rights reserved.</p>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="#" style="color: white;">Facebook</a>
+                <a href="#" style="color: white;">Twitter</a>
+                <a href="https://www.instagram.com/next__undisputed" target="_blank" style="color: white;">Instagram</a>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter">
+                <p>Subscribe to our newsletter for the latest updates!</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
