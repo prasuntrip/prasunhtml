@@ -3,138 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Design using HTML</title>
+    <title>Prasun-News Nepal</title>
     <style>
-       body {
-            background-color: #f4f4f4;
-            color: #333333;
-            font-family: Arial, sans-serif;
-        }
         
-        #name {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #1e3a5f;
-            text-align: center;
-            color: white;
-            padding: 10px;
-            margin: 5px;
-            border: 4px solid #003366;
-            border-radius: 20px;
-        }
-        
-        #name img {
-            border-radius: 50%;
-            width: 110px;
-            height: 110px;
-            margin-right: 20px;
-        }
-        
-        .experience {
-            background-color: white;
-            border: 4px solid #d3d3d3;
-            border-radius: 20px;
-            padding: 20px;
-            max-width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .info-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .info-box {
-            background-color: white;
-            border: 4px solid #d3d3d3;
-            border-radius: 20px;
-            padding: 15px;
-            width: 40%;
-            text-align: center;
-        }
-        
-        h1, h3 {
-            font-weight: bold;
-            color: #1e3a5f;
-        }
-        
-        ul {
-            text-align: left;
-            list-style-type: none;
-        }
-        
-        li {
-            padding: 5px 0;
-        }
-        
-        .contact {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .contact ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
+        * {
+            margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
         
-        .contact li {
-            display: inline;
-            font-size: 16px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
-		.dev{
-		color:white;
-		}
+
         
+        header {
+            background-color: darkmagenta;
+            color: wheat;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header h3 {
+            font-size: 1.2em;
+        }
+
+        
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
-    <div id="name">
-        <img src="photo.jpg" alt="Prasun Tripathi">
-        <div>
-            <h1 class="dev">Prasun Tripathi</h1>
-            <h3 class="dev">JAVA Developer</h3>
-        </div>
-    </div>
 
-    <div class="experience">
-        <p>Hello there, I am Prasun Tripathi, a developer with over 3 years of experience in various fields of the technological industry, including android development, desktop development, web applications, and backend projects. I have significant experience in freelancing and have helped dozens of customers realize their prototypes and ideas.</p>
-    </div>
+    
+    <header>
+        <h1>Welcome to Prasun News</h1>
+        <h3>Get the fastest updates on worldwide news!</h3>
+    </header>
 
-    <div class="info-container">
-        <div class="info-box">
-            <h3>Qualifications</h3>
-            <ul>
-                <li>Bachelor's in Computer Science</li>
-                <li>Certified Java Developer</li>
-                <li>Android Development Specialization</li>
-            </ul>
-        </div>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Sports</a>
+        <a href="cv.html">Contact</a>
+    </nav>
 
-        <div class="info-box">
-            <h3>Skillset</h3>
-            <ul>
-                <li>Java</li>
-                <li>Android Development</li>
-                <li>Networking</li>
-                <li>Spring Boot</li>
-                <li>SQL Databases</li>
-            </ul>
-        </div>
-    </div>
-	<br>
-    <div class="experience">
-        <h3 class="contact">Contact</h3>
-        <ul>
-            <li>Email: 024neb933@sxc.edu.np</li>
-            <li>Phone: +977 9763853144</li>
-            <li>Instagram: instagram.com/next__undisputed</li>
-        </ul>
-    </div>
+    
+    <main>
+       
+    </main>
+
 </body>
 </html>
