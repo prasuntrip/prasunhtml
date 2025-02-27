@@ -63,6 +63,49 @@
             padding: 20px;
         }
 
+        
+.news-article {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: darkslategray;
+}
+
+.summary {
+    font-size: 1.1em;
+    color: gray;
+    margin: 10px 0;
+}
+
+.read-more {
+    color: darkmagenta;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
     </style>
 </head>
 <body>
@@ -85,8 +128,26 @@
 
     
     <main>
-       
+        <article class="news-article">
+            <img src="article-image.jpg" alt="Article Image" class="article-image">
+            <div class="article-content">
+                <h2>Breaking News: Global Markets Surge</h2>
+                <p class="summary">Today, the global markets experienced a significant surge following positive economic reports from around the world...</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </article>
+    
+        <article class="news-article">
+            <img src="article-image2.jpg" alt="Article Image" class="article-image">
+            <div class="article-content">
+                <h2>Technology Update: New Smartphone Released</h2>
+                <p class="summary">Tech enthusiasts are excited as a new smartphone with groundbreaking features has been released...</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </article>
     </main>
+    
+    
 
 </body>
 </html>
